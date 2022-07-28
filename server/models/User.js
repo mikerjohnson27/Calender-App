@@ -32,7 +32,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    tasks: {
+    Event: {
       type: DataTypes.STRING,
       allowNull: true,
     },
