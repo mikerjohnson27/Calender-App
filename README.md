@@ -31,7 +31,8 @@
     <!--GitHub-->
     <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
 </div>
-    <h2>Screenshots:</h2>
+    <h2>Screenshots:</h2>  
+    <img src="https://user-images.githubusercontent.com/101275747/182042982-b3f2f139-a00c-40ad-932f-ea0eeb584632.png">
 </div>
 <br>
 <br>
