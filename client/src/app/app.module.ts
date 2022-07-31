@@ -2,17 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavComponent } from './nav/nav.component';
+import { EntryFormComponent } from './entry-form/entry-form.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    EntryFormComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
