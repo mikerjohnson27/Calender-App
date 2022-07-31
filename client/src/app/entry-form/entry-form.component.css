@@ -4,6 +4,17 @@ label{
 .form-side{
     background-color: beige;
     display: inline-block;
-    width: 250px;
-    height: 350px;
+    width: 15%;
+    height: 100%;
+}
+.form-inner{
+    background-color: gray;
+    color: white;
+}
+.form-group > label{
+    color: white;
+}
+.form-group > input{
+    display: inline;
+    width: 91%;
 }
