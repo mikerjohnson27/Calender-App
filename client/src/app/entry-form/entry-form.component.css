@@ -1,0 +1,9 @@
+label{
+    color: black;
+}
+.form-side{
+    background-color: beige;
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+}
