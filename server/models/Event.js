@@ -26,8 +26,8 @@ Event.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    tags_id: {
-      type: DataTypes.STRING,
+    tag_ref: {
+      type: DataTypes.INTEGER,
       allowNull: true,
       references: {
         model: 'Tag',
