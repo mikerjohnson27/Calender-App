@@ -32,9 +32,21 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    Event: {
-      type: DataTypes.STRING,
+    event_refs: {
+      type: DataTypes.INTEGER,
       allowNull: true,
+      references: {
+        model: 'Event',
+        key: 'id',
+      },
+    },
+    teg_refs: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'Tag',
+        key: 'id',
+      },
     },
   },
   {
