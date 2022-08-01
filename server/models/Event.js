@@ -3,9 +3,7 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class Event extends Model {
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
-  }
+
 }
 
 Event.init(
@@ -28,9 +26,13 @@ Event.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    tags: {
-      type: DataTypes.ARRAY,
+    tags_id: {
+      type: DataTypes.STRING,
       allowNull: true,
+      references: {
+        model: 'Tag',
+        key: 'id',
+      },
     },
     color: {
       type: DataTypes.STRING,
@@ -38,15 +40,6 @@ Event.init(
     },
   },
   {
-    hooks: {
-      async beforeCreate(newUserData) {
-        newUserData.title = await bcrypt.hash(newUserData.title, 10);
-        newUserData.start = await bcrypt.hash(newUserData.start, 10);
-        newUserData.end = await bcrypt.hash(newUserData.end, 10);
-        newUserData.tags = await bcrypt.hash(newUserData.tags, 10);
-        return newUserData;
-      },
-    },
     sequelize,
     freezeTableName: true,
     underscored: true,
