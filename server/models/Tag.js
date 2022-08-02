@@ -41,7 +41,7 @@ Tag.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Event',
+    modelName: 'Tag',
   }
 );
 
